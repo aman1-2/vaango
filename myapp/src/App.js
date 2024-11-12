@@ -3,6 +3,7 @@ import Header from './components/Header';
 import About from './sections/About';
 import Menu from './sections/Menu';
 import Contact from './sections/Contact';
+import Banner from './components/Banner';
 
 function App() {
   const aboutRef = useRef(null);
@@ -23,7 +24,8 @@ function App() {
         onAboutClick={() => scrollToSection(aboutRef)}
         onContactClick={() => scrollToSection(contactRef)}
       />
-      <main className="pt-20">
+      <main className='pt-2'>
+        <Banner />
         <About ref={aboutRef} />
         <Menu ref={menuRef} />
         <Contact ref={contactRef} />

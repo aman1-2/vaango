@@ -5,7 +5,7 @@ import { FaPhone } from "react-icons/fa6";
 
 const Header = ({ onMenuClick, onDealsClick, onRestaurantsClick, onContactClick }) => {
   return (
-    <header className="bg-green-700 text-white fixed w-full">
+    <header className="bg-green-700 text-white  w-full">
       {/* Top Row: Email, Phone, and Social Media Icons */}
       <div className="flex justify-between items-center px-10 py-2">
         <div className="flex space-x-6 items-center">
@@ -30,7 +30,7 @@ const Header = ({ onMenuClick, onDealsClick, onRestaurantsClick, onContactClick 
       </div>
 
       {/* Bottom Row: Navigation Links */}
-      <nav className="flex justify-center bg-white py-3 space-x-8 text-xl font-semibold">
+      <nav className="flex justify-center bg-white py-3 space-x-8 leading-6 text-xl font-semibold ">
         <button onClick={onMenuClick} className="text-black">Menu</button>
         <button onClick={onDealsClick} className="text-black">Deals</button>
         <button onClick={onRestaurantsClick} className="text-black">Restaurants</button>
